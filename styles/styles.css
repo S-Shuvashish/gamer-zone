@@ -127,6 +127,7 @@
 
 
 
+
 /* online-game styles */
 
 .online-games-title {
@@ -164,6 +165,10 @@
 
 /* play section styles */
 
+.play{
+    margin-bottom: 10px;
+}
+
 .play-title {
     text-align: right;
     font-size: 3rem;
@@ -188,13 +193,25 @@
     justify-content: space-evenly;
     align-items: center;
     margin-top: 120px;
-    margin-bottom: 220px;
+    margin-bottom: 150px;
+}
+
+.play-img-main{
+    height: 100%;
+    margin-left: 80px;
+    margin-top: 200px;
+}
+
+.play-image-scale{
+   position: relative;
+   bottom: 300px;
 }
 
 /* btn styles */
 
 .btn-container {
-    margin: 150px;
+    margin-left: 100px;
+    margin-top: 0px;
 }
 
 .btn {
@@ -206,6 +223,7 @@
 h6 {
     color: #0B0223;
     font-weight: 600;
+    margin-right: 0px;
 }
 
 .line-btn {
@@ -222,7 +240,7 @@ h6 {
     border-radius: 50px;
     background: #FFF;
     border: 1px solid #FF42A5;
-    padding: 10px 10px 10px 10px;
+    padding: 20px;
     cursor: pointer;
 }
 
@@ -231,6 +249,7 @@ h6 {
 footer {
     padding: 120px 500px;
     background: #0B0223;
+    margin-top: 120px;
 }
 #footer-logo{
    display: flex;
@@ -264,4 +283,41 @@ footer {
     text-align: center; 
     font-weight: 500;
     margin-top: 70px;
+}
+
+@media screen and (max-width: 576px) {
+    .header, .nav-btn, .header-container, .card, .play{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header, main, footer{
+        align-items: center;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .header-img{
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+    .play-img{
+        max-width: 90%;
+        height: auto;
+        display: block;
+    }
+
+    .play-title, .play-description{
+        text-align: center;
+    }
+
+    .fcontent-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .copy{
+        text-align: center;
+    }
 }
