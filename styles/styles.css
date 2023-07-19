@@ -3,57 +3,6 @@
 }
 
 /* navbar styles */
-/* .header{
-    background: #FFF;
-    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
-    padding-top: 40px;
-    padding-left: 200px;
-    padding-right: 200px;
-    padding-bottom: 40px;
-}
-
-.nav-title{
-font-size: 2.8rem;
-font-weight: 700;
-align-items: center;
-}
-.nav-span{
-    color: #FF42A5;
-}
-
-.nav-icon{
-    margin-left: 20px;
-    width: 86px;
-    height: 40px;
-}
-
-.nav-logo{
-    display: flex;
-    justify-content: center;
-}
-
-
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav > ul{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-nav li{
-    list-style: none;
-    margin-left: 30px;
-    align-items: center;
-}
-.nav-border{
-    padding: 15px 20px 15px 20px;
-    border-radius: 8px;
-    background: rgba(11, 2, 35, 0.10);
-} */
 
 .main-header {}
 
@@ -64,6 +13,11 @@ nav li{
     background: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
     padding: 20px 150px 20px 150px;
+}
+
+.header-container{
+    background-image: url(../images/Group\ 14.png);
+    background-repeat: no-repeat;
 }
 
 .nav-logo {
@@ -142,17 +96,17 @@ nav li{
     gap: 15px;
 }
 
-.header-pink{
+.header-pink {
     color: #FFF;
     font-size: 1.5rem;
     font-weight: 600;
     border-radius: 48px;
-    background:#FF42A5;
+    background: #FF42A5;
     border: none;
     padding: 20px 40px;
 }
 
-.header-blue{
+.header-blue {
     border-radius: 48px;
     background: #4EC5F7;
     color: #FFF;
@@ -163,10 +117,151 @@ nav li{
     margin-left: 24px;
 }
 
-.header-container{
+.header-container {
     display: flex;
     justify-content: space-between;
     padding-left: 150px;
     padding-right: 150px;
     align-items: center;
+}
+
+
+
+/* online-game styles */
+
+.online-games-title {
+    color: #0B0223;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.online-span {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0px;
+}
+
+.online-games-description {
+    color: #534C64;
+    text-align: center;
+    font-size: 1.25rem;
+    margin-top: 15px;
+}
+
+.card1 {
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+/* play section styles */
+
+.play-title {
+    text-align: right;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.play-span {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.play-description {
+    color: #534C64;
+    text-align: right;
+    font-size: 1.25rem;
+}
+
+.play {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 120px;
+    margin-bottom: 220px;
+}
+
+/* btn styles */
+
+.btn-container {
+    margin: 150px;
+}
+
+.btn {
+    display: flex;
+    gap: 15px;
+
+}
+
+h6 {
+    color: #0B0223;
+    font-weight: 600;
+}
+
+.line-btn {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    align-items: center;
+    gap: 60px;
+    justify-content: center;
+}
+
+.btn:hover {
+    color: #FF42A5;
+    border-radius: 50px;
+    background: #FFF;
+    border: 1px solid #FF42A5;
+    padding: 10px 10px 10px 10px;
+    cursor: pointer;
+}
+
+/* footer styles */
+
+footer {
+    padding: 120px 500px;
+    background: #0B0223;
+}
+#footer-logo{
+   display: flex;
+   justify-content: center;
+}
+#f-title {
+    color: #FFF;
+}
+
+.f-content {
+    color: #FFF;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.fcontent-container{
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+}
+
+.fotter-icon{
+    display: flex;
+    gap: 120px;
+    justify-content: center;
+    margin-top: 65px;
+}
+
+.copy{
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center; 
+    font-weight: 500;
+    margin-top: 70px;
 }
